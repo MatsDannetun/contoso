@@ -1,3 +1,4 @@
 resources:
 - ./moonshot-sample
 - ./dummy-app
+- ./config-service
