@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: config-service-config
 data:
-  config.yaml: |-
+  GitOptions.yaml: |-
     giturl: 'https://github.com/simonjaeger/contoso.git'
     localrepositorypath: '/app/'
     gitmail: 'peter_bryntesson@hotmail.com'
     gituser: 'peterbryntesson'
-    gitpassword: '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'
+    gitpassword: '...'
     gitbranch: 'main'

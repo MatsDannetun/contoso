@@ -30,3 +30,13 @@ spec:
         env:
           - name: ASPNETCORE_URLS
             value: https://+:443;http://+:80
+        volumeMounts:
+        - mountPath: /app/Configuration
+          name: config
+      volumes:
+      - name: config
+        configMap:
+          name: config-service-config
+          items:
+          - key: "GitOptions.yaml"
+            path: GitOptions.yaml
