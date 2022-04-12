@@ -3,15 +3,15 @@ kind: Service
 metadata:
   name: config-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: config-service
   ports:
-  - name: http
-    port: 4080
+  - port: 4080
+    name: http
     targetPort: 80
     protocol: TCP
-  - name: https
-    port: 443
+  - port: 443
+    name: https
     targetPort: 443
     protocol: TCP

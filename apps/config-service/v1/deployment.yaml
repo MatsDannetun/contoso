@@ -22,8 +22,10 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 80
+          name: http
           protocol: TCP
         - containerPort: 443
+          name: https
           protocol: TCP
         env:
           - name: ASPNETCORE_URLS
