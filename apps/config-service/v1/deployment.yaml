@@ -24,12 +24,9 @@ spec:
         - containerPort: 80
           name: http
           protocol: TCP
-        - containerPort: 443
-          name: https
-          protocol: TCP
         env:
           - name: ASPNETCORE_URLS
-            value: https://+:443;http://+:80
+            value: http://+:80
         volumeMounts:
         - mountPath: /app/Configuration
           name: config

@@ -7,11 +7,7 @@ spec:
   selector:
     app: config-service
   ports:
-  - port: 4080
+  - port: 4000
     name: http
     targetPort: 80
-    protocol: TCP
-  - port: 443
-    name: https
-    targetPort: 443
     protocol: TCP
