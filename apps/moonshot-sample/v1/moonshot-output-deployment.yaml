@@ -20,6 +20,9 @@ spec:
         volumeMounts:
           - mountPath: /app/Configuration
             name: config
+          - mountPath: /secrets
+            name: secrets
+            readOnly: true
       volumes:
       - name: config
         configMap:
@@ -27,3 +30,6 @@ spec:
           items:
           - key: "config.tags"
             path: configuration.yml
+      - name: secrets
+        secret:
+          secretName: output-secret-config-string
