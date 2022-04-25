@@ -32,4 +32,4 @@ spec:
             path: configuration.yml
       - name: secrets
         secret:
-          secretName: output-secret-config-string
+          secretName: output-connection-string
