@@ -1,4 +1,5 @@
 resources:
+- ./namespace
 - ./mosquitto/v1
 - ./config-service/v1
 
