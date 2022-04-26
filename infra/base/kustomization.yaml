@@ -1,5 +1,5 @@
 resources:
-- mosquitto-configmap.yaml
-- mosquitto-deployment.yaml
-- mosquitto-namespace.yaml
-- mosquitto-service.yaml
+- ./mosquitto/v1
+- ./config-service/v1
+
+namespace: moonshot-system
